@@ -8,6 +8,7 @@
      Padding="5"
      RowDefinitions="50, *, 50"
      ColumnDefinitions="*">
+    
     <SearchBar
       x:Name="SearchBar"
       Grid.Row="0"
@@ -15,6 +16,7 @@
       Placeholder="Search Contact"
       TextChanged="SearchBar_TextChanged">
     </SearchBar>
+    
     <ListView
       Grid.Row="1"
       Grid.Column="0"
@@ -23,8 +25,8 @@
       SeparatorColor="Silver"
       RowHeight="65"
       ItemSelected="listContacts_ItemSelected"
-      ItemTapped="listContacts_ItemTapped"
-      >
+      ItemTapped="listContacts_ItemTapped">
+      
       <ListView.ItemTemplate>
         <DataTemplate>
           <TextCell
